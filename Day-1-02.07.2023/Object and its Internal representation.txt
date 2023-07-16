@@ -1,0 +1,49 @@
+Object:
+A JavaScript object is a collection of named values having state and behavior (properties and method).
+
+Objects, in JavaScript, is it’s most important data-type and forms the building blocks for modern JavaScript. 
+These objects are quite different from JavaScript’s primitive data-types(Number, String, Boolean, null, undefined and symbol) in the sense that while these primitive data-types all store a single value each (depending on their types).
+Objects are more complex and each object may contain any combination of these primitive data-types as well as reference data-types.
+An object, is a reference data type. Variables that are assigned a reference value are given a reference or a pointer to that value.
+That reference or pointer points to the location in memory where the object is stored. The variables don’t actually store the value.
+
+JavaScript may be defined as an unordered collection of related data, of primitive or reference types, in the form of “key: value” pairs. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object.
+
+A JavaScript object has properties associated with it. A property of an object can be explained as a variable that is attached to the object.
+Object properties are basically the same as ordinary JavaScript variables, except for the attachment to objects.
+
+Syntax: var <object-name> = {key1: value1, key2: value2,... keyN: valueN};
+
+Like all JavaScript variables, both the object name (which could be a normal variable) and property name are case sensitive.
+
+Unassigned properties of an object are undefined (and not null).
+myCar.color; // undefined
+
+Object Properties:
+The name:values pairs (in JavaScript objects) are called properties.
+
+Java Script properties is “Properties are the values associated with a JavaScript object”.
+
+The object properties can be different primitive values, other objects and functions.
+Properties can usually be changed, added, and deleted, but some are read only.
+
+Syntax for adding a property to an object is: ObjectName.ObjectProperty = propertyValue;
+
+Syntax for deleting a property from an object is: delete ObjectName.ObjectProperty;
+
+Syntax to access a property from an object is: 
+
+objectName.property  // Car.Make
+or
+objectName["property”]    // Car["Make"]
+or
+objectName[expression]   // x = "Make"; Car[x]
+
+Object Methods:
+An object method is an object property containing a function definition.
+
+JavaScript Object methods is “Methods are actions that can be performed on objects.”.
+
+Let’s assume to start the car there will be a mechanical functionality.
+function(){return ignition.on}
+
