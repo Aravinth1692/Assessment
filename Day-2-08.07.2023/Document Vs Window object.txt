@@ -1,0 +1,67 @@
+Document Object:
+The document object represent a web page that is loaded in the browser.
+By accessing the document object, we can access the element in the HTML page.
+With the help of document objects, we can add dynamic content to our web page.
+
+Syntax: document.property_name;
+
+Properties of document:
+activeElement: It returns the currently active elements in the document
+body: It returns the contents of the body element.
+charSet: It returns a string, representing the document’s character encoding.
+title: It returns the title element of the document.
+head: It returns the head element of the document.
+doctype: It returns the document’s doctype.
+
+Methods of Document:
+
+Syntax: document.method_name;
+
+createAttribute(): It is used to create an attribute node with the specified name and returns the attribute object.
+close(): It is used to close the output stream.
+createComment(): It is used to create a comment node with some text.
+write(): It is used to write some content or javascript code in the document.
+
+Window Object:
+The window object is the topmost object of the DOM hierarchy. 
+It represents a browser window or frame that displays the contents of the webpage.
+Whenever a window appears on the screen to display the contents of the document, the window object is created. 
+
+Syntax: window.property_name;
+
+Properties of the window:
+Closed: It holds a Boolean value that represents whether the window is closed or not.
+console: It returns a reference to the console object which provides access to the browser’s debugging console
+crypto: It returns the browser crypto object.
+Document: It returns a reference to the document object of that window.
+
+Methods of Window:
+
+Syntax: window.method_name;
+
+blur(): It is used to remove focus from the current window.
+close(): It is used for closing a certain window or tab of the browser which was previously opened.
+stop(): It is used to stop the window from loading resources in the current browsing context.
+
+Difference between document and window:
+Document:
+It represents any HTML document or web page that is loaded in the browser.
+It is loaded inside the window.
+It is the object of window property.
+All the tags, elements with attributes in HTML are part of the document.
+We can access the document from a window using the window. document.
+The document is part of BOM (browser object model) and dom (Document object model)
+Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title
+syntax:     document.propertyname;
+example:    document.title :  will return the title of the document
+
+Window:
+It represents a browser window or frame that displays the contents of the webpage.  
+It is the very first object that is loaded in the browser.
+It is the object of the browser.
+Global objects, functions, and variables of JavaScript are members of the window object.
+We can access the window from the window only. i.e. window.window
+The window is part of BOM, not DOM.
+Properties of the window object cannot be accessed by the document object.
+syntax:     window.propertyname;
+example:    window.innerHeight : will return the height of the content area of the browser
